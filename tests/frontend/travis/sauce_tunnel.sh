@@ -9,5 +9,5 @@ unzip /tmp/sauce.zip -d /tmp
 
 #save the sauce pid in a file and give it a bit of time to connect
 #echo $! > /tmp/sauce.pid
-wait 30
+sleep 30
 kill $!

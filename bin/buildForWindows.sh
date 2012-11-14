@@ -54,7 +54,7 @@ wget "http://nodejs.org/dist/v$NODE_VERSION/node.exe" -O ../node.exe
 
 echo "create the zip..."
 cd /tmp
-zip -9 -r etherpad-lite-win.zip etherpad-lite-win
+zip -9 -r etherpad-lite-win.zip etherpad-lite-win -x "etherpad-lite-win/.git/*"
 mv etherpad-lite-win.zip $START_FOLDER
 
 echo "clean up..."
